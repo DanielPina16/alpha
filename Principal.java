@@ -99,19 +99,6 @@ public class Principal extends javax.swing.JFrame {
         coordenadasMundiales(-14, -0, 20, 10);
         coordenadasDispositivo(0, 0, 400, 400);
         
-        for(int i=0; i<50;i++){
-        aux=transformaCoordenadas(puntos);
-        dibujaLineas(aux);
-            try {
-                Thread.sleep(50);
-                } catch (InterruptedException ex) {
-                  Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            borraLineas(aux);
-            traslada(puntos,1,0.1f);
-            aux = transformaCoordenadas(puntos);
-            dibujaLineas(aux);
-        }
     }//GEN-LAST:event_jButton1MouseClicked
 
     public void traslada(float p[][], float x, float y){
