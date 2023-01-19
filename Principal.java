@@ -163,7 +163,7 @@ public class Principal extends javax.swing.JFrame {
     public void dibujaLineas(float p[][])
     {
         Graphics g=jPanel1.getGraphics();
-        g.setColor(new Color(0,255,0));
+        g.setColor(new Color(255,0,0));
         int i;
         for(i=0;i<p.length-1;i++)
             g.drawLine((int)p[i][0], (int)p[i][1], (int)p[i+1][0], (int)p[i+1][1]);
