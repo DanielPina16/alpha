@@ -107,31 +107,13 @@ public class Principal extends javax.swing.JFrame {
                 } catch (InterruptedException ex) {
                   Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
                 }
-            borraLineas(aux);
-            traslada(puntos,1,0.1f);
+            //borraLineas(aux);
+            //traslada(puntos,1,0.1f);
             aux = transformaCoordenadas(puntos);
             dibujaLineas(aux);
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
-    public void traslada(float p[][], float x, float y){
-        for (int i=0; i<p.length; i++){
-            p[i][0]+=x;
-            p[i][1]+=x;
-        }
-    }
-    
-    public void borraLineas(float p[][])
-    {
-        Graphics g=jPanel1.getGraphics();
-        g.setColor(Color.BLACK);
-        int i;
-        for(i=0;i<p.length-1;i++)
-            g.drawLine((int)p[i][0], (int)p[i][1], (int)p[i+1][0], (int)p[i+1][1]);
-            
-            g.drawLine((int)p[i][0], (int)p[i][1], (int)p[0][0], (int)p[0][1]);
-        
-    }
     
     
     public void coordenadasMundiales(int xmin, int ymin, int xmax, int ymax){
